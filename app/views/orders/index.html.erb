@@ -15,7 +15,7 @@
 
   <% @orders.each do |order| %>
     <tr>
-      <td><%= order.purchaser_name %></td>
+      <td><%= order.purchaser.name %></td>
       <td><%= order.item_description %></td>
       <td><%= order.item_price %></td>
       <td><%= order.purchase_count %></td>

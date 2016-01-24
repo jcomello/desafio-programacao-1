@@ -8,7 +8,7 @@ class OrdersController < ApplicationController
   end
 
   def uploaded
-    Order.save_from_file(params[:upload].path)
+    OrderFile.save_from_file(params[:upload].path)
 
     flash[:notice] = "Upload feito com sucesso"
     redirect_to orders_path
