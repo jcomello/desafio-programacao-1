@@ -1,0 +1,5 @@
+<%= form_tag uploaded_orders_path, multipart: true do %>
+  <label for="upload">Enviar arquivo de ordens</label>
+  <%= file_field_tag "upload" %>
+  <%= submit_tag 'enviar' %>
+<% end %>
