@@ -6,8 +6,7 @@ class OrderFile
       @order = Order.find_or_create_by(
         purchaser: Purchaser.find_or_create_by(name: row["purchaser name"]),
         purchase_count: row["purchase count"],
-        merchant_address: row["merchant address"],
-        merchant_name: row["merchant name"]
+        merchant: Merchant.find_or_create_by(name: row["merchant name"], address: row["merchant address"])
       )
 
       Item.find_or_create_by(description: row["item description"], price: row["item price"], order: @order)
