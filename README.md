@@ -1,4 +1,40 @@
 # Desafio de programação 1
+
+Desafio realizado por João Mello
+
+# Requisitos
+
+Ruby 2.0+
+
+Rubygems
+
+SQLite 3.0+
+
+# Instalação
+
+Instalados o Ruby, Rubygems e SQLite, seguir o setup abaixo:
+
+Na raíz do projeto rodar o seguinte comando
+
+```
+  ./setup.sh
+```
+
+Acesse a aplicação em seu navegador web de preferência no endereço:
+
+[http://localhost:3000/](http://localhost:3000/)
+
+# Upload de arquivos
+
+Para fazer o upload do arquivo basta selecionar o botão "Choose file" e selecionar o arquivo em sua máquina.
+A seguir click em "Enviar"
+
+Abaixo da listagem de ordens vindas dos arquivos, temos a Receita total bruta do último arquivo que foi enviado.
+
+Com link "upload" você pode voltar para a página de upload e enviar um novo arquivo seguindo os passos acima.
+
+---
+# Desafio de programação 1
 A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de programador, de vários níveis.
 
 Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, porém normalmente você não deve precisar de mais do que algumas horas.
@@ -33,7 +69,7 @@ Sua aplicação web não precisa:
 1. Ter uma aparência bonita.
 
 ## Avaliação
-Seu projeto será avaliado de acordo com os seguintes critérios. 
+Seu projeto será avaliado de acordo com os seguintes critérios.
 
 1. Sua aplicação preenche os requerimentos básicos?
 1. Você documentou a maneira de configurar o ambiente e rodar sua aplicação?
