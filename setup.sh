@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+echo "Intalando bundler..."
+gem install bundler
+echo
+echo
+echo
+
 echo "Instalando as gems necessárias..."
 bundle
 echo
