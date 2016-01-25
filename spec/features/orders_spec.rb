@@ -19,4 +19,14 @@ describe "Orders" do
     expect(page).to have_content "Marty McFly"
     expect(page).to have_content "Snake Plissken"
   end
+
+  it "shows the gross revenue by the file uploaded" do
+    visit upload_orders_path
+    attach_file('upload', File.absolute_path('spec/fileset/example_input.tab'))
+    click_on "enviar"
+
+    within ".gross-revenue" do
+      expect(page).to have_content "95.0"
+    end
+  end
 end

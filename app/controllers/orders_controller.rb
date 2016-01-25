@@ -1,5 +1,6 @@
 class OrdersController < ApplicationController
   def index
+    @gross_revenue = OrderFile.inserted_orders.gross_revenue
     @orders = Order.all
   end
 

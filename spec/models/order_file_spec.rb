@@ -1,6 +1,23 @@
 require 'rails_helper'
 
 describe OrderFile do
+  let(:file_path) { "spec/fileset/example_input.tab" }
+  let(:duplicated_file_path) { "spec/fileset/duplicated_input.tab" }
+
+  context ".inserted_orders" do
+    it "returns the orders inserted by the file" do
+      OrderFile.save_from_file(file_path)
+
+      expect(OrderFile.inserted_orders.count).to eq 4
+    end
+
+    it "does not return duplicated orders" do
+      OrderFile.save_from_file(duplicated_file_path)
+
+      expect(OrderFile.inserted_orders.count).to eq 3
+    end
+  end
+
   context ".save_from_file" do
     let(:file_path) { "spec/fileset/example_input.tab" }
     let(:duplicated_file_path) { "spec/fileset/duplicated_input.tab" }
