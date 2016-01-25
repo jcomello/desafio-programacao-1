@@ -1,6 +1,6 @@
 require 'csv'
 
-class OrderFile
+class OrderUpload
   def self.save_from_file(file_path)
     @order_ids = []
     CSV.read(file_path, {:col_sep => "\t", headers: true}).each do |row|
