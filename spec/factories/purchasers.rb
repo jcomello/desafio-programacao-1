@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :purchaser do
-    name "MyString"
+    name "Burgers"
   end
 
 end

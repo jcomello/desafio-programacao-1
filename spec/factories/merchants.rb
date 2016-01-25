@@ -1,7 +1,6 @@
 FactoryGirl.define do
   factory :merchant do
-    name "MyString"
-address "MyString"
+    name "Bob's Burgers"
+    address "123 fake st"
   end
-
 end
