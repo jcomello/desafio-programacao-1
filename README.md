@@ -24,7 +24,13 @@ Acesse a aplicação em seu navegador web de preferência no endereço:
 
 [http://localhost:3000/](http://localhost:3000/)
 
-# Upload de arquivos
+# Logar no sistema
+
+Ao acessar a url acima, você estará na tela de login.
+Caso ainda não tenha uma conta, é só clicar em "Criar conta" e preencher os dados.
+Caso tenha esquecido a senha, basta clicar no link "Esqueceu sua senha?"
+
+# Fazer upload do arquivo de ordens
 
 Para fazer o upload do arquivo basta selecionar o botão "Choose file" e selecionar o arquivo em sua máquina.
 A seguir click em "Enviar"

@@ -1,0 +1,7 @@
+<p>Olá <%= @resource.email %>!</p>
+
+<p>Sua conta foi travada por causa de um excessivo número de tentavidas de login mal sucessedidas.</p>
+
+<p>Clique no link abaixo para destravaar sua conta:</p>
+
+<p><%= link_to 'Destrave minha conta', unlock_url(@resource, unlock_token: @token) %></p>

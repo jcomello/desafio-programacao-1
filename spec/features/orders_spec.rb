@@ -1,6 +1,12 @@
 require "rails_helper"
 
 describe "Orders" do
+  let(:user) { FactoryGirl.create(:user) }
+
+  before do
+    login_as user
+  end
+
   it "uploads a file with many orders" do
     visit upload_orders_path
     attach_file('upload', File.absolute_path('spec/fileset/example_input.tab'))

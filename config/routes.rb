@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  
   resources :orders, only: :index do
     collection do
       get "upload"
