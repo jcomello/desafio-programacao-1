@@ -6,8 +6,6 @@ class Order < ActiveRecord::Base
   belongs_to :merchant
 
   def self.gross_revenue
-    all.inject(0.0) do |sum, order|
-      sum += order.item.price*order.purchase_count
-    end
+    joins(:item).sum("purchase_count * items.price").to_d
   end
 end
